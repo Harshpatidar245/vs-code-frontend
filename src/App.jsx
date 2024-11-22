@@ -109,7 +109,7 @@ function App() {
     switch (currentFile.language) {
       case "cpp":
         const cppResponse = await axios.post(
-          "http://localhost:5000/api/compile/cpp",
+          "https://vs-code-backend.onrender.com/api/compile/cpp",
           requestBody,
           {
             headers: { "Content-Type": "application/json" },
@@ -119,7 +119,7 @@ function App() {
         break;
       case "python":
         const pyResponse = await axios.post(
-          "http://localhost:5000/api/run/python",
+          "https://vs-code-backend.onrender.com/api/run/python",
           requestBody,
           {
             headers: { "Content-Type": "application/json" },
@@ -129,7 +129,7 @@ function App() {
         break;
       case "java":
         const javaResponse = await axios.post(
-          "http://localhost:5000/api/compile/java",
+          "https://vs-code-backend.onrender.com/api/compile/java",
           requestBody,
           {
             headers: { "Content-Type": "application/json" },
